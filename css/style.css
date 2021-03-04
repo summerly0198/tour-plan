@@ -470,35 +470,6 @@ template {
   }
 }
 
-.navbar-menu {
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-
-.navbar-menu__link {
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.navbar .user__avatar {
-  width: 60px;
-  height: 60px;
-}
-
-.navbar .user__name {
-  margin-left: 18px;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.navbar .search__input {
-  width: 450px;
-}
-
-.navbar .search__button {
-  width: 80px;
-}
-
 @media (max-width: 1200px) {
   .conteiner {
     max-width: 960px;

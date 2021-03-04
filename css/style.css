@@ -464,7 +464,16 @@ template {
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
+  .conteiner {
+    max-width: 700px;
+  }
+  .search {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
   .conteiner {
     max-width: 700px;
   }
@@ -491,9 +500,53 @@ template {
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .conteiner {
+    max-width: 650px;
+    width: 90%;
+  }
+  .navbar-menu__link {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .search__input {
+    width: 190px;
+  }
+  .search__button {
+    width: 40px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .conteiner {
+    max-width: 400px;
+    width: 85%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
 @media (max-width: 320px) {
   .conteiner {
-    max-width: 576px;
+    max-width: 280px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -518,7 +571,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 530px) {
   .logo {
     width: 99px;
   }

@@ -85,7 +85,9 @@
     &__button
       width: 40px
 
-@media (min-width: 321px) and (max-width: 480px)
+@media (min-width: 481px) and (max-width: 767px)
+
+@media (max-width: 480px)
   .conteiner
     max-width: 400px
     width: 85%
@@ -109,7 +111,7 @@
         height: 1px
         background-color: $text
   .stars
-    flex-basis: 50%
+    flex-basis: 20%
   .hotel
     &__wrapper
       justify-content: space-between
@@ -127,6 +129,8 @@
   .navbar
     &__search, &-menu, &__user
       display: none
+    &-top
+      padding-top: 24px
   .menu
     &-button
       display: flex
@@ -139,12 +143,17 @@
       border: none
       background-color: $light
       cursor: pointer
-
       &__line
         width: 16px
         height: 1px
         background-color: $text
-
-@media (max-width: 530px)
-  .logo
-    width: 99px
+.breadcrumb
+  &-list
+    padding-top: 15px
+    padding-bottom: 0
+.hotel
+  padding-top: 16px
+  &-wrapper
+    justify-content: space-between
+  &-name
+    padding-top: 10px

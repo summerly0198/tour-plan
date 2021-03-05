@@ -1,4 +1,4 @@
-@media (min-width: 1600px) and (max-width: 1920px)
+@media (min-width: 1600px)
   .conteiner
     max-width: 1400px
   .logo
@@ -8,13 +8,33 @@
 
 @media (max-width: 1200px)
   .conteiner
-    max-width: 960px
-
-@media (min-width: 769px) and (max-width: 992px)
-  .conteiner
-    max-width: 700px
-  .search
-    margin-left: 30px
+    max-width: 927px
+.navbar
+  &-top
+    padding-top: 32px
+    padding-bottom: 28px
+  &__search
+    margin: auto
+    margin-left: 88px
+  &-menu
+    padding: 24px 0
+.logo
+  width: 147px
+.search
+  &__input
+    width: 295px
+  &__button
+    width: 55px
+    height: 90%
+.user
+  &__avatar
+    width: 35px
+    height: 35px
+  &__name
+    margin-left: 11px
+.breadcrumb
+  &-list
+    padding: 12px 0
 
 @media (max-width: 768px)
   .conteiner
@@ -26,17 +46,29 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 48px
   .navbar
     &-menu
-      padding-top: 22px
+      padding-top: 20px
       padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
+  .user
+    &__avatar
+      width: 40px
+      height: 40px
+    &__name
+      margin-left: 22px
   .search
     &__input
       width: 340px
+    &__button
+      width: 65px
+      height: 100%
+  .breadcrumb
+    &-list
+      padding: 17px 0
 
 @media (min-width: 481px) and (max-width: 767px)
   .conteiner
@@ -76,6 +108,17 @@
         width: 16px
         height: 1px
         background-color: $text
+  .stars
+    flex-basis: 50%
+  .hotel
+    &__wrapper
+      justify-content: space-between
+    &-info
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
 
 @media (max-width: 320px)
   .conteiner

@@ -1,61 +1,67 @@
-@media (min-width: 1600px)
+@media (min-width: 1441px) and (max-width: 1900px)
   .conteiner
-    max-width: 1400px
-  .logo
-    width: 243px
+    max-width: 1300px
 
-@media (max-width: 1200px)
+@media (min-width: 1200px) and (max-width: 1440px)
   .conteiner
-    max-width: 927px
+    max-width: 925px
 .navbar
   &-top
-    padding-top: 32px
-    padding-bottom: 28px
+    padding-top: 30px
+    padding-bottom: 30px
   &__search
     margin: auto
-    margin-left: 88px
+    margin-left: 89px
   &-menu
     padding: 24px 0
 .logo
   width: 147px
 .search
   &__input
-    width: 295px
+    width: 294px
   &__button
     width: 55px
-    height: 90%
+    height: 98%
 .user
   &__avatar
     width: 35px
     height: 35px
   &__name
-    margin-left: 11px
-.breadcrumb
-  &-list
-    padding: 12px 0
+    margin-left: 10px
+.hotel
+  padding-top: 13px
+  &-name
+    font-size: 20px
+    line-height: 23px
+    margin: 0
 
-@media (min-width: 769px) and (max-width: 992px)
+@media (min-width: 993px) and (max-width: 1199px)
   .conteiner
-    max-width: 740px
+    max-width: 900px
 
-@media (max-width: 768px)
+@media (min-width: 851px) and (max-width: 992px)
+  .conteiner
+    max-width: 750px
+
+@media (min-width: 768px) and (max-width: 850px)
   .conteiner
     max-width: 700px
   .logo
     width: 132px
   .navbar
     &-top
-      padding-top: 27px
-      padding-bottom: 30px
     &__search
       margin: auto
-  .navbar
+      margin-right: 73px
     &-menu
-      padding-top: 20px
-      padding-bottom: 22px
+      padding: 21px 14px
       &__link
         font-size: 12px
         line-height: 15px
+      &-top
+        margin-left: 108px
+  .search
+    height: 40px
   .user
     &__avatar
       width: 40px
@@ -71,12 +77,36 @@
   .breadcrumb
     &-list
       padding: 17px 0
+  .hotel
+    padding-top: 18px
+    &-name
+      font-size: 24px
+      line-height: 28px
+    &-description
+      font-size: 13px
+      line-height: 19px
+  .stars
+    &-img
+      margin-right: -2px
+  .offer
+    padding: 4px 11px
+  .rating
+    max-width: 65px
+    min-height: 45px
+
+@media (min-width: 481px) and (max-width: 550px)
+  .navbar
+    &__search
+      display: none
 
 @media (min-width: 481px) and (max-width: 767px)
   .conteiner
     max-width: 650px
     width: 90%
   .navbar
+    &-top
+    &__search
+      margin: auto
     &-menu
       &__link
         font-size: 8px
@@ -91,7 +121,7 @@
       &__rating
         display: none
 
-@media (max-width: 480px)
+@media (max-width: 550px)
   .conteiner
     max-width: 400px
     width: 85%
@@ -135,6 +165,8 @@
       display: none
     &-top
       padding-top: 26px
+  .logo
+    width: 99px
   .menu
     &-button
       display: flex
@@ -151,15 +183,21 @@
         width: 16px
         height: 1px
         background-color: $text
-.breadcrumb
-  &-list
-    padding-top: 20px
-    padding-bottom: 0
-.hotel
-  padding-top: 16px
-  &-wrapper
-    justify-content: space-between
-  &-description
-    font-size: 14px
-  &-name
-    padding-top: 11px
+  .breadcrumb
+    &-list
+      padding: 20px 0px
+    &-wrapper
+      justify-content: space-between
+    &-description
+      font-size: 14px
+    &-name
+      padding-top: 11px
+  .hotel
+    padding: 0
+    &-name
+      padding-top: 16px
+      font-size: 24px
+    &-description
+      padding-top: 6px
+  .offer
+    padding: 4px 11px

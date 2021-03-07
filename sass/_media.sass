@@ -1,48 +1,42 @@
-@media (min-width: 1441px) and (max-width: 1900px)
-  .conteiner
-    max-width: 1300px
+@media (max-width: 1200px)
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      margin: auto
+      margin-left: 87px
+    &-menu
+      padding: 24px 0
+  .logo
+    width: 147px
+  .search
+    &__input
+      width: 295px
+    &__button
+      width: 55px
+  .user
+    &__avatar
+      width: 35px
+      height: 35px
+    &__name
+      margin-left: 10px
+  .breadcrumb
+    &-list
+      padding: 11px 0px
+  .hotel
+    padding-top: 15px
+    &-name
+      font-size: 20px
+      line-height: 24px
+      margin: 0
+  .rating
+    max-width: 56px
+    min-height: 40px
 
-@media (min-width: 1200px) and (max-width: 1440px)
+@media (min-width: 993px) and (max-width: 1199px)
   .conteiner
-    max-width: 925px
-.navbar
-  &-top
-    padding-top: 30px
-    padding-bottom: 30px
-  &__search
-    margin: auto
-    margin-left: 87px
-  &-menu
-    padding: 24px 0
-.logo
-  width: 147px
-.search
-  &__input
-    width: 295px
-  &__button
-    width: 55px
-.user
-  &__avatar
-    width: 35px
-    height: 35px
-  &__name
-    margin-left: 10px
-.breadcrumb
-  &-list
-    padding: 11px 0px
-.hotel
-  padding-top: 15px
-  &-name
-    font-size: 20px
-    line-height: 24px
-    margin: 0
-.rating
-  max-width: 56px
-  min-height: 40px
-
-@media (min-width: 992px) and (max-width: 1199px)
-  .conteiner
-    max-width: 800px
+    max-width: 900px
 
 @media (min-width: 768px) and (max-width: 992px)
   .conteiner
@@ -51,6 +45,8 @@
     width: 132px
   .navbar
     &-top
+      padding-top: 30px
+      padding-bottom: 30px
     &__search
       margin: auto
       margin-right: 73px
@@ -59,6 +55,7 @@
       &__link
         font-size: 12px
         line-height: 15px
+        letter-spacing: 0px
       &-top
         margin-left: 108px
   .search
@@ -68,7 +65,7 @@
       width: 40px
       height: 40px
     &__name
-      margin-left: 22px
+      margin-left: 19px
   .search
     &__input
       width: 340px
@@ -84,8 +81,9 @@
       font-size: 24px
       line-height: 28px
     &-description
-      font-size: 13px
-      line-height: 19px
+      font-size: 12px
+      line-height: 18px
+      letter-spacing: 0.2px
   .stars
     &-img
       margin-right: -2px
@@ -115,12 +113,28 @@
 
 @media (min-width: 481px) and (max-width: 550px)
   .navbar
-    &__search
+    &__search, &-menu, &__user
       display: none
   .hotel
     &-info
       &__rating
         display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: $light
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text
 
 @media (min-width: 401px) and (max-width: 480px)
   .conteiner
@@ -133,8 +147,24 @@
     &-info
       &__rating
         display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: $light
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text
 
-@media (min-width: 320px) and (max-width: 400px)
+@media (max-width: 400px)
   .conteiner
     max-width: 280px
     width: 92%
@@ -180,8 +210,8 @@
       padding-top: 14px
       font-size: 24px
     &-description
-      padding-top: 6px
-      font-size: 13px
+      padding-top: 4px
+      font-size: 12px
     &-info
       &__rating
         display: none

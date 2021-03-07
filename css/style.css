@@ -558,19 +558,12 @@ template {
 }
 
 @media (max-width: 1200px) {
-  .navbar-top {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
   .navbar__search {
     margin: auto;
     margin-left: 87px;
   }
   .navbar-menu {
     padding: 24px 0;
-  }
-  .logo {
-    width: 147px;
   }
   .search__input {
     width: 295px;
@@ -604,7 +597,7 @@ template {
 
 @media (min-width: 993px) and (max-width: 1199px) {
   .conteiner {
-    max-width: 900px;
+    max-width: 800px;
   }
 }
 

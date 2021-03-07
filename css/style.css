@@ -577,7 +577,7 @@ template {
 }
 
 .navbar-menu {
-  padding: 21px 0;
+  padding: 24px 0;
 }
 
 .logo {
@@ -602,16 +602,16 @@ template {
 }
 
 .breadcrumb-list {
-  padding: 16px 0px;
+  padding: 11px 0px;
 }
 
 .hotel {
-  padding-top: 16px;
+  padding-top: 15px;
 }
 
 .hotel-name {
-  font-size: 23px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 24px;
   margin: 0;
 }
 
@@ -620,8 +620,8 @@ template {
 }
 
 .rating {
-  max-width: 62px;
-  min-height: 46px;
+  max-width: 56px;
+  min-height: 40px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -804,8 +804,5 @@ template {
   }
   .stars-img {
     margin-right: -2px;
-  }
-  .offer {
-    padding: 4px 11px;
   }
 }

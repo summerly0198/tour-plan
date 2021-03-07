@@ -101,6 +101,7 @@ img {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -592,12 +593,6 @@ template {
   .rating {
     max-width: 56px;
     min-height: 40px;
-  }
-}
-
-@media (min-width: 993px) and (max-width: 1199px) {
-  .conteiner {
-    max-width: 800px;
   }
 }
 

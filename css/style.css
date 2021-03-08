@@ -597,11 +597,6 @@ template {
   background-color: transparent;
 }
 
-.slider-button__img {
-  background: no-repeat center top fixed;
-  background-size: cover;
-}
-
 .slider-button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
@@ -610,6 +605,10 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.slider .slider-wrapper__img {
+  background-size: cover;
 }
 
 @media (max-width: 1200px) {
@@ -699,6 +698,9 @@ template {
   .hotel {
     padding-top: 18px;
   }
+  .hotel-info {
+    padding-bottom: 26px;
+  }
   .hotel-name {
     font-size: 24px;
     line-height: 28px;
@@ -717,6 +719,12 @@ template {
   }
   .offer {
     padding: 4px 11px;
+  }
+  .swiper-container {
+    height: 433px;
+  }
+  .slider {
+    width: 700px;
   }
 }
 
@@ -741,9 +749,39 @@ template {
   .search__button {
     width: 40px;
   }
+  .slider {
+    width: 650px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+  .slider {
+    width: 600px;
+  }
+  .swiper-container {
+    height: 370px;
+  }
+  .slider {
+    width: 600px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+  .slider {
+    width: 500px;
+  }
+  .swiper-container {
+    height: 260px;
+  }
+  .slider {
+    width: 500px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 550px) {
+  .conteiner {
+    max-width: 480px;
+  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
@@ -769,6 +807,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .swiper-container {
+    height: 173px;
+  }
+  .slider {
+    width: 350px;
   }
 }
 
@@ -802,6 +846,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .swiper-container {
+    height: 173px;
+  }
+  .slider {
+    width: 350px;
   }
 }
 
@@ -865,6 +915,9 @@ template {
     padding-top: 4px;
     font-size: 12px;
   }
+  .hotel-info {
+    padding-bottom: 35px;
+  }
   .hotel-info__rating {
     display: none;
   }
@@ -880,5 +933,11 @@ template {
   }
   .offer {
     padding: 4px 11px;
+  }
+  .swiper-container {
+    height: 173px;
+  }
+  .slider {
+    width: 280px;
   }
 }

@@ -1,6 +1,13 @@
 @media (max-width: 1200px)
   .conteiner
     max-width: 900px
+  .slider
+    width: 526px
+  .swiper
+    &-slide
+      &__img
+        height: 100%
+        object-fit: cover
   .navbar
     &-top
     &__search
@@ -32,7 +39,7 @@
     max-width: 56px
     min-height: 40px
 
-@media (min-width: 768px) and (max-width: 992px)
+@media (max-width: 992px)
   .conteiner
     max-width: 700px
   .logo
@@ -72,7 +79,7 @@
   .hotel
     padding-top: 18px
     &-info
-      padding-bottom: 26px
+      padding-bottom: 17px
     &-name
       font-size: 24px
       line-height: 28px
@@ -80,6 +87,12 @@
       font-size: 12px
       line-height: 18px
       letter-spacing: 0.2px
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
   .stars
     &-img
       margin-right: -2px
@@ -89,49 +102,56 @@
   .offer
     padding: 4px 11px
   .swiper-container
-    height: 433px
+    height: 450px
   .slider
     width: 700px
+  .booking
+    width: 340px
+    padding: 29px 23px 27px 23px
+    &__info
+      margin-bottom: 9px
+  .map
+    width: 340px
 
-@media (max-width: 767px)
+@media (max-width: 768px)
   .conteiner
     max-width: 650px
-    width: 90%
-  .navbar
-    &-top
-    &__search
-      margin: auto
-    &-menu
-      &__link
-        font-size: 8px
-        line-height: 12px
-  .logo
-    width: 139px
   .search
     &__input
-      width: 190px
-    &__button
-      width: 40px
+      width: 274px
   .slider
     width: 650px
-
-@media (min-width: 651px) and (max-width: 768px)
-  .slider
-    width: 600px
   .swiper-container
-    height: 370px
-  .slider
-    width: 600px
+    height: 100%
+  .booking
+    width: 306px
+    height: 190px
+    padding: 26px 16px 27px 20px
+    &__info
+      margin-bottom: 7px
+    &__start
+      font-size: 9px
+      line-height: 14px
+    &__pricetag
+      font-size: 22px
+      line-height: 26px
+    &__text
+      margin-bottom: 5px
+    &__description
+      margin-left: 5px
+    &__heading
+      font-size: 16px
+    &__button
+      width: 98%
+      min-height: 37px
+      font-size: 12px
+    &__call-center
+      margin-bottom: 15px
+  .map
+    width: 306px
+    height: 190px
 
-@media (max-width: 650px)
-  .slider
-    width: 500px
-  .swiper-container
-    height: 260px
-  .slider
-    width: 500px
-
-@media (max-width: 550px)
+@media (max-width: 700px)
   .conteiner
     max-width: 480px
   .navbar
@@ -160,45 +180,36 @@
         height: 1px
         background-color: $text
   .swiper-container
-    height: 173px
+    height: 300px
   .slider
-    width: 350px
+    width: 480px
+  .booking
+    width: 220px
+    height: 180px
+    padding: 21px 15px
+    margin-bottom: 21px
+  .map
+    width: 220px
+    height: 180px
 
-@media (min-width: 401px) and (max-width: 480px)
+@media (max-width: 568px)
   .conteiner
-    max-width: 350px
+    max-width: 450px
     width: 92%
-  .navbar
-    &__search, &-menu, &__user
-      display: none
-  .logo
-    width: 99px
-  .hotel
-    &-info
-      &__rating
-        display: none
-  .menu
-    &-button
-      display: flex
-      width: 16px
-      height: 11px
-      padding: 0
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      border: none
-      background-color: $light
-      cursor: pointer
-      &__line
-        width: 16px
-        height: 1px
-        background-color: $text
   .swiper-container
-    height: 173px
+    height: 310px
   .slider
-    width: 350px
+    width: 450px
+  .booking
+    width: 220px
+    height: 173px
+    padding: 15px 17px
+    margin-bottom: 21px
+  .map
+    width: 220px
+    height: 173px
 
-@media (max-width: 400px)
+@media (max-width: 480px)
   .conteiner
     max-width: 280px
     width: 92%
@@ -245,15 +256,21 @@
       padding-top: 14px
       font-size: 24px
     &-description
-      padding-top: 4px
+      padding-top: 2px
       font-size: 12px
+      line-height: 13px
     &-info
-      padding-bottom: 35px
+      padding-bottom: 38px
       &__rating
         display: none
       &__offer
         order: -1
         margin-left: 0
+    &__slider
+      margin-bottom: 19px
+    &-right
+      flex-direction: column
+      justify-content: space-between
   .stars
     flex-basis: 23%
     &-img
@@ -261,6 +278,36 @@
   .offer
     padding: 4px 11px
   .swiper-container
-    height: 173px
+    height: 180px
   .slider
     width: 280px
+  .booking
+    width: 280px
+    height: 210px
+    padding: 29px 21px 26px 24px
+    margin-bottom: 21px
+    &__start
+      font-size: 10px
+      line-height: 17px
+    &__pricetag
+      font-size: 24px
+      line-height: 28px
+    &__room
+      margin-top: 5px
+    &__text
+      margin-bottom: 7px
+    &__description
+      margin-left: 8px
+    &__call-center
+      margin-bottom: 18px
+    &__heading
+      font-size: 17px
+    &__num
+      margin-left: 11px
+    &__button
+      width: 99%
+      min-height: 45px
+      font-size: 14px
+  .map
+    width: 280px
+    height: 173px

@@ -738,6 +738,17 @@ template {
   overflow: hidden;
 }
 
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.newsletter {
+  padding: 98px 0 87px 0;
+  background-image: url(../);
+}
+
 @media (max-width: 1200px) {
   .conteiner {
     max-width: 900px;
@@ -884,7 +895,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .conteiner {
     max-width: 650px;
   }
